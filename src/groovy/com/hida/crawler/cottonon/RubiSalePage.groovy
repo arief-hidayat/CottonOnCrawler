@@ -39,10 +39,12 @@ class RubiSalePage extends Page {
         displayAllProducts()
 
         List<SaleProductItem> list = new ArrayList<>()
-        for(Navigator product : $(PRODUCT_LIST_SELECTOR).find(".product").iterator())
+        for(Navigator product : $(PRODUCT_LIST_SELECTOR).find(".product").iterator()) {
             list.add getSaleProductItem(product)
+        }
         list
     }
+
 
     protected void filterProduct() {
         throw new RuntimeException("to be implemented in next iteration")
@@ -86,6 +88,7 @@ class RubiSalePage extends Page {
         item.imgUrl = product.find("img").jquery.attr("src")
         item.priceNow = toDouble("${product.find('.now').jquery.text()}")
         item.priceWas = toDouble("${product.find('.was').jquery.text()}")
+        if(product.find(".more_colours")) item.otherColorHasSale = true
         return item
     }
 

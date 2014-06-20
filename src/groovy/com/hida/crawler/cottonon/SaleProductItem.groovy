@@ -6,4 +6,5 @@ package com.hida.crawler.cottonon
 class SaleProductItem {
     String id, title, productUrl, imgUrl
     double priceWas, priceNow
+    boolean otherColorHasSale = false
 }
