@@ -6,9 +6,9 @@ import geb.spock.GebSpec
 /**
  * Created by hida on 15/6/2014.
  */
-class RubiSalePageSpec extends GebSpec  {
+class CottonOnSalePageSpec extends GebSpec  {
 
-    def "test normal case"() {
+    def "test normal case for rubi sale"() {
         // still hard code
         given:
         System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\Firefox.exe")
@@ -27,6 +27,6 @@ class RubiSalePageSpec extends GebSpec  {
                     ============================================
 """
         }
-        items.size() == 54
+        items.size() == 42
     }
 }

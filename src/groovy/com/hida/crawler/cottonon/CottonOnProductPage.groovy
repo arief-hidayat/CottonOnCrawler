@@ -6,7 +6,7 @@ import geb.navigator.Navigator
 /**
  * Created by hida on 20/6/2014.
  */
-class RubiProductPage extends Page {
+class CottonOnProductPage extends Page {
     static at = { $('.product-details .colours .selectBox')} // make sure selectBox is loaded
 
     SaleProductItem getDetail(boolean checkOtherColors) {
