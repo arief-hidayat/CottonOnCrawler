@@ -20,7 +20,7 @@ class CottonOnSalePageSpec extends GebSpec  {
         println "size ${items.size()}"
         for(SaleProductItem item : items) {
             println """
-                    ${item.id} - ${item.title}
+                    ${item.productId} - ${item.title}
                     image ${item.imgUrl}
                     url ${item.productUrl}
                     Price ${item.priceNow}. was ${item.priceWas}

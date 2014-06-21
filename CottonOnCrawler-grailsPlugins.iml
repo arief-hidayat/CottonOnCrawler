@@ -4,9 +4,10 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7/web-app" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.0.2/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -33,36 +34,46 @@
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0/grails-app/controllers" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/geb-0.9.3" />
-    <content url="file://$MODULE_DIR$/target/work/plugins/hibernate-3.6.10.13">
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/hibernate-3.6.10.13/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/hibernate-3.6.10.13/grails-app/i18n" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/work/plugins/hibernate-3.6.10.16">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/hibernate-3.6.10.16/src/java" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.0.2">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.0.2/src/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.0.2/grails-app/services" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.0.2/grails-app/taglib" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7">
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7/grails-app/i18n" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.7/grails-app/taglib" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/quartz-1.0.2">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/quartz-1.0.2/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/quartz-1.0.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/quartz-1.0.2/grails-app/services" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/resources-1.2.8/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.0.3">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.0.3/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.0.3/src/groovy" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/spock-0.7" />
-    <content url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.52.1">
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.52.1/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.52.1/src/groovy" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.54">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.54/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.54/src/groovy" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/webxml-1.4.1">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="grails-2.3.8" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.3.10" level="application" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (CottonOnCrawler-grailsPlugins)">
         <CLASSES>
@@ -75,19 +86,10 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.10.Final/hibernate-core-3.6.10.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.2.8.RELEASE/spring-orm-3.2.8.RELEASE.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-plugin-support/3.0.6.RELEASE/grails-datastore-gorm-plugin-support-3.0.6.RELEASE.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-hibernate-core/3.0.6.RELEASE/grails-datastore-gorm-hibernate-core-3.0.6.RELEASE.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-hibernate/3.0.6.RELEASE/grails-datastore-gorm-hibernate-3.0.6.RELEASE.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.4.8/ehcache-core-2.4.8.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/3.6.10.Final/hibernate-ehcache-3.6.10.Final.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/7.0.52/tomcat-embed-core-7.0.52.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/core/compiler/ecj/3.7.2/ecj-3.7.2.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/7.0.52/tomcat-embed-websocket-7.0.52.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-logging-log4j/7.0.52/tomcat-embed-logging-log4j-7.0.52.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/7.0.52/tomcat-embed-el-7.0.52.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.52/tomcat-embed-jasper-7.0.52.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina-ant/7.0.52/tomcat-catalina-ant-7.0.52.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar!/" />
@@ -106,13 +108,26 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/gebish/geb-core/0.9.3/geb-core-0.9.3.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/gebish/geb-spock/0.9.3/geb-spock-0.9.3.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-grails-support/0.7-groovy-2.0/spock-grails-support-0.7-groovy-2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.1/javax.mail-api-1.5.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.1/javax.mail-1.5.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-simple/3.1.1.RELEASE/grails-datastore-simple-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm/3.1.1.RELEASE/grails-datastore-gorm-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-core/3.1.1.RELEASE/grails-datastore-core-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-plugin-support/3.1.1.RELEASE/grails-datastore-gorm-plugin-support-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-hibernate-core/3.1.1.RELEASE/grails-datastore-gorm-hibernate-core-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-gorm-hibernate/3.1.1.RELEASE/grails-datastore-gorm-hibernate-3.1.1.RELEASE.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/7.0.53/tomcat-embed-core-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/7.0.53/tomcat-embed-websocket-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-logging-log4j/7.0.53/tomcat-embed-logging-log4j-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/7.0.53/tomcat-embed-el-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.53/tomcat-embed-jasper-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina-ant/7.0.53/tomcat-catalina-ant-7.0.53.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.1/quartz-2.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.ideaLibSources/geb-core-0.9.3-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ideaLibSources/geb-waiting-0.9.3-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ideaLibSources/selenium-api-2.42.2-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
   </component>

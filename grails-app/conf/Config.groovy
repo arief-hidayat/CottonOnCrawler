@@ -119,3 +119,34 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+grails {
+    mail {
+        host = "smtp.gmail.com"
+
+//        username = "imms.noreply@gmail.com"
+//        password = "awesomeimms"
+        username = "real.sharingan@gmail.com"
+        password = "xqhyymapkueukywh" // must set application-specific password https://security.google.com/settings/security/apppasswords
+
+        port = 587 //465
+        props = ["mail.smtp.auth":"true",
+                 "mail.smtp.socketFactory.port":"587",   //465 Port for TLS/STARTTLS: 587
+                 "mail.smtp.starttls.enable": "true",
+//            "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback":"false"]
+
+
+//        port = 465
+//        props = ["mail.smtp.auth":"true",
+//                 "mail.smtp.socketFactory.port":"465",
+//                 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+//                 "mail.smtp.socketFactory.fallback":"false"]
+    }
+}
+
+grails.mail.default.from="real.sharingan@gmail.com"
+
+
+hida.conf.sgd2idr = 10_000.00
+hida.conf.rubi.addoncost = 50_000.00

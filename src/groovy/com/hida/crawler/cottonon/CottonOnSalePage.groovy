@@ -2,6 +2,7 @@ package com.hida.crawler.cottonon
 
 import geb.Page
 import geb.navigator.Navigator
+import grails.util.Holders
 
 /**
  * Created by hida on 14/6/2014.
@@ -33,14 +34,14 @@ class CottonOnSalePage extends Page {
 //    }
 
 
-    List<SaleProductItem> getSaleProductItemInfo(){
+    List<SaleProductItem> getSaleProductItemInfo(Comparator<SaleProductItem> sorter){
         displayAllProducts()
 
         List<SaleProductItem> list = new ArrayList<>()
         for(Navigator product : $(PRODUCT_LIST_SELECTOR).find(".product").iterator()) {
             list.add getSaleProductItem(product)
         }
-        list
+        list.sort(sorter ?: new RubiItemComparator())
     }
 
 
@@ -82,11 +83,13 @@ class CottonOnSalePage extends Page {
         item.title = product.parent()?.jquery?.attr("title")
         item.productUrl = product.parent()?.jquery?.attr("href")
         if(!item.productUrl.startsWith("http")) item.productUrl ="http://asia.cottonon.com" + item.productUrl
-        item.id = product.jquery.attr("rel")
+        item.productId = product.jquery.attr("rel")
         item.imgUrl = product.find("img").jquery.attr("src")
         item.priceNow = toDouble("${product.find('.now').jquery.text()}")
         item.priceWas = toDouble("${product.find('.was').jquery.text()}")
         if(product.find(".more_colours")) item.otherColorHasSale = true
+
+        item.finalized(Holders.config.hida?.conf?.sgd2idr ?: 10_000.00, Holders.config.hida?.conf?.rubi?.addoncost ?: 50_000)
         return item
     }
 
