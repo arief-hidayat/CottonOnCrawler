@@ -80,7 +80,7 @@ class CottonOnSalePage extends Page {
 
     protected SaleProductItem getSaleProductItem(Navigator product) {
         SaleProductItem item = new SaleProductItem()
-        item.title = product.parent()?.jquery?.attr("title")
+        item.title = trimAndToUpper product.parent()?.jquery?.attr("title")
         item.productUrl = product.parent()?.jquery?.attr("href")
         if(!item.productUrl.startsWith("http")) item.productUrl ="http://asia.cottonon.com" + item.productUrl
         item.productId = product.jquery.attr("rel")
@@ -91,6 +91,12 @@ class CottonOnSalePage extends Page {
 
         item.finalized(Holders.config.hida?.conf?.sgd2idr ?: 10_000.00, Holders.config.hida?.conf?.rubi?.addoncost ?: 50_000)
         return item
+    }
+    private String trimAndToUpper(String val) {
+        if(!val) return null;
+        val = val.trim();
+        if(val.endsWith(".")) val = val.substring(0, val.length() - 1)
+        val.trim().toUpperCase()
     }
 
     protected double toDouble(String val) {
