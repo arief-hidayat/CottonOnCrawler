@@ -150,3 +150,16 @@ grails.mail.default.from="real.sharingan@gmail.com"
 
 hida.conf.sgd2idr = 10_000.00
 hida.conf.rubi.addoncost = 50_000.00
+
+imms {
+
+    datatable {
+
+        domainfields = [
+
+                CrawlerSubscriber : ["crawlerPageName", "email", "count"]
+
+        ]
+
+    }
+}

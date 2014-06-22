@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CottonOnCrawler.iml" filepath="$PROJECT_DIR$/CottonOnCrawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/CottonOnCrawler-grailsPlugins.iml" filepath="$PROJECT_DIR$/CottonOnCrawler-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/immsUiPlugin-inplacePlugin.iml" filepath="$PROJECT_DIR$/immsUiPlugin-inplacePlugin.iml" />
     </modules>
   </component>
 </project>

@@ -21,6 +21,7 @@ grails.project.fork = [
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
 ]
 
+grails.plugin.location.'imms-ui-plugin' = '../imms-ui-plugin'
 grails.project.dependency.resolver = "maven" // or ivy
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -73,9 +74,9 @@ grails.project.dependency.resolution = {
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.16" // or ":hibernate4:4.3.5.1"
         runtime ":database-migration:1.4.0"
-        runtime ":jquery:1.11.0.2"
+//        runtime ":jquery:1.11.0.2"
 //        runtime ":resources:1.2.7"
-        runtime ':resources:1.2.8'
+//        runtime ':resources:1.2.8'
 
 
         compile ":mail:1.0.6"
